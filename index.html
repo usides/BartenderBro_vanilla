@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BartenderBro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Bubblegum+Sans&family=Bungee+Inline&family=Denk+One&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Bubblegum+Sans&family=Bungee+Inline&family=Denk+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <section id="first-frame" class="frame first-frame noselect">
+        <div class="chalk-brd">
+          <h1 id="chalk-board-header" class="chalk-brd__header">BB Serves:</h1>
+          <p id="chalk-board-call" class="chalk-brd__call">
+            Just ask the bartender!
+          </p>
+          <ol id="chalk-board-list" class="chalk-brd__list"></ol>
+
+          <a target="_blank" href="https://kottans.org/"
+            ><img
+              class="chalk-brd__kottans-logo"
+              src="./img/kottans.png"
+              alt="kottans-logo"
+          /></a>
+
+          <div class="chalk-brd__tv">
+            <img
+              id="tv-screen"
+              class="chalk-brd__tv-image"
+              src="./img/interference.gif"
+              alt="cocktail_thumb"
+            />
+            <div class="chalk-brd__tv-button"></div>
+          </div>
+        </div>
+
+        <div class="desk"></div>
+
+        <div class="talk-zone">
+          <input
+            class="talk-zone__request"
+            type="text"
+            id="cocktail-input"
+            placeholder="Bro, what is ...?"
+          />
+          <button
+            id="random-drink-btn"
+            class="talk-zone__request-random"
+            type="button"
+          >
+            Bro, give me anything that burns!!!
+          </button>
+        </div>
+      </section>
+      <section id="second-frame" class="frame drink-descript noselect">
+        <div id="second-frame-wrapper" class="drink-descript__wrapper"></div>
+        <button
+          id="go-back-btn"
+          type="button"
+          class="drink-descript__paw"
+        ></button>
+      </section>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
