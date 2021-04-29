@@ -1,0 +1,341 @@
+button,
+a,
+input,
+li,
+label {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 0px;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+.chalk-brd__header.hidden,
+.chalk-brd__call.hidden,
+.chalk-brd__list.hidden,
+.chalk-brd__kottans-logo.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body {
+  background-color: #000;
+}
+
+.main,
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 414px;
+  height: 736px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.drink-descript {
+  background-color: #2f2424;
+  left: -100%;
+  -webkit-transition: left linear 150ms;
+  transition: left linear 150ms;
+  color: #fff;
+  overflow: auto;
+}
+
+.drink-descript--open {
+  left: 50%;
+}
+
+.drink-descript__paw {
+  background: url(../img/paw.svg) center center/70% no-repeat transparent;
+  width: 45px;
+  height: 45px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: block;
+  margin: 1rem auto 2rem;
+  cursor: pointer;
+}
+
+.drink-descript__header {
+  font-family: "Bungee Inline", cursive;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem auto 0;
+  width: 50%;
+}
+
+.drink-descript__img {
+  width: 85%;
+  margin: 1rem auto 0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.drink-descript__receipt {
+  max-width: 85%;
+  font-family: "Denk One", sans-serif;
+  font-size: 1.1rem;
+  margin: 2rem auto 0;
+  padding-bottom: 1rem;
+}
+
+.ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 85%;
+  margin: 2rem auto 0;
+  color: #fff;
+  font-family: "Denk One", sans-serif;
+  font-size: 0.9rem;
+}
+
+.ingredients__list-name {
+  margin: 0;
+  list-style: none;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+.ingredients__list-qty {
+  margin: 0;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ingredients__item {
+  margin-top: 0.2rem;
+}
+
+.chalk-brd {
+  position: relative;
+  min-height: 65%;
+  width: 100%;
+  background: url(../img/bgc.png) center bottom/100% no-repeat #3e3e3e;
+}
+
+.chalk-brd__header {
+  max-width: 45%;
+  padding: 0.3rem;
+  margin-left: 0.3rem;
+  font-family: "Bungee Inline", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.chalk-brd__call {
+  max-width: 45%;
+  font-family: "Bungee Inline", cursive;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.chalk-brd__call.removed {
+  display: none;
+}
+
+.chalk-brd__list {
+  max-width: 50%;
+  margin-top: 0.5rem;
+  margin-left: 0.7rem;
+  list-style: none;
+}
+
+.chalk-brd__item {
+  margin-top: 0.1rem;
+  font-size: 1.3rem;
+  font-family: "Bubblegum Sans", cursive;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chalk-brd__item:active {
+  color: #ffc700;
+}
+
+.chalk-brd__kottans-logo {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 45px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.chalk-brd__tv {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  width: 155px;
+  height: 175px;
+  background-color: #2f2424;
+  border-radius: 12px;
+}
+
+.chalk-brd__tv-image {
+  width: 136px;
+  height: 136px;
+  margin: 9px auto;
+  border-radius: 8px;
+  border: 2px solid #3e3e3e;
+}
+
+.chalk-brd__tv-button {
+  position: absolute;
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #ff7223;
+}
+
+.desk {
+  height: 10px;
+  background-color: #000;
+}
+
+.talk-zone {
+  min-height: 35%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffc700), color-stop(50%, #ff7223));
+  background: linear-gradient(0deg, #ffc700 0%, #ff7223 50%);
+  padding-top: 1rem;
+}
+
+.talk-zone__request {
+  max-width: 70%;
+  padding: 0.8rem;
+  margin-left: 1.5rem;
+  font-family: "Bangers", cursive;
+  font-size: 1.9rem;
+  background-color: #2f2424;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 11px;
+  text-indent: 0.5rem;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  text-align: center;
+  cursor: pointer;
+}
+
+.talk-zone__request:focus {
+  background-color: #fff;
+  border-color: #2f2424;
+  color: #ff7223;
+  text-indent: 0.5rem;
+}
+
+.talk-zone__request-random {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  max-width: 70%;
+  padding: 0.5rem;
+  color: #fff;
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  background-color: #2f2424;
+  border: 3px solid #fff;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .chalk-brd__item:hover {
+    color: #ffc700;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main,
+  .frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .chalk-brd {
+    min-height: 65%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main,
+  .frame {
+    overflow: auto;
+  }
+  .chalk-brd {
+    min-height: 380px;
+  }
+  .chalk-brd__call {
+    font-size: 1rem;
+  }
+  .chalk-brd__item {
+    font-size: 1.2rem;
+  }
+  .desk {
+    margin-top: -20px;
+  }
+  .talk-zone {
+    min-height: 50%;
+  }
+}

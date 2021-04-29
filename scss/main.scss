@@ -1,0 +1,266 @@
+@import 'config';
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 0px;
+}
+
+::placeholder {
+  color: $white;
+  opacity: 1; /* Firefox */
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+.chalk-brd__header.hidden,
+.chalk-brd__call.hidden,
+.chalk-brd__list.hidden,
+.chalk-brd__kottans-logo.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  appearance: none;
+}
+
+body {
+  background-color: #000;
+}
+
+.main,
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 414px;
+  height: 736px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.drink-descript {
+  background-color: #2f2424;
+  left: -100%;
+  transition: left linear 150ms;
+  color: $white;
+  overflow: auto;
+  &--open {
+    left: 50%;
+  }
+  &__paw {
+    background: url(../img/paw.svg) center center / 70% no-repeat transparent;
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid $white;
+    display: block;
+    margin: 1rem auto 2rem;
+    cursor: pointer;
+  }
+
+  &__header {
+    font-family: $desk-font1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem auto 0;
+    width: 50%;
+  }
+
+  &__img {
+    width: 85%;
+    margin: 1rem auto 0;
+    border: 2px solid $white;
+    border-radius: 10px;
+  }
+
+  &__receipt {
+    max-width: 85%;
+    font-family: $info-font;
+    font-size: 1.1rem;
+    margin: 2rem auto 0;
+    padding-bottom: 1rem;
+  }
+}
+
+.ingredients {
+  display: flex;
+  max-width: 85%;
+  margin: 2rem auto 0;
+  color: $white;
+  font-family: $info-font;
+  font-size: 0.9rem;
+
+  &__list-name {
+    margin: 0;
+    list-style: none;
+    flex: 1.5;
+  }
+
+  &__list-qty {
+    margin: 0;
+    list-style: none;
+    flex: 1;
+  }
+
+  &__item {
+    margin-top: 0.2rem;
+  }
+}
+
+.chalk-brd {
+  position: relative;
+  min-height: 65%;
+  width: 100%;
+  background: url(../img/bgc.png) center bottom / 100% no-repeat $grey;
+
+  &__header {
+    max-width: 45%;
+    padding: 0.3rem;
+    margin-left: 0.3rem;
+    font-family: $desk-font1;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $white;
+    border-bottom: 2px solid $white;
+  }
+
+  &__call {
+    max-width: 45%;
+    font-family: $desk-font1;
+    font-size: 1.2rem;
+    color: $white;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    &.removed {
+      display: none;
+    }
+  }
+
+  &__list {
+    max-width: 50%;
+    margin-top: 0.5rem;
+    margin-left: 0.7rem;
+    list-style: none;
+  }
+
+  &__item {
+    margin-top: 0.1rem;
+    font-size: 1.3rem;
+    font-family: $desk-font2;
+    color: $white;
+    cursor: pointer;
+    &:active {
+      color: #ffc700;
+    }
+  }
+
+  &__kottans-logo {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 45px;
+    transform: rotate(-20deg);
+  }
+
+  &__tv {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    width: 155px;
+    height: 175px;
+    background-color: #2f2424;
+    border-radius: 12px;
+  }
+
+  &__tv-image {
+    width: 136px;
+    height: 136px;
+    margin: 9px auto;
+    border-radius: 8px;
+    border: 2px solid $grey;
+  }
+
+  &__tv-button {
+    position: absolute;
+    right: 10px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $orange;
+  }
+}
+
+.desk {
+  height: 10px;
+  background-color: #000;
+}
+
+.talk-zone {
+  min-height: 35%;
+  width: 100%;
+  background: linear-gradient(0deg, #ffc700 0%, #ff7223 50%);
+  padding-top: 1rem;
+
+  &__request {
+    max-width: 70%;
+    padding: 0.8rem;
+    margin-left: 1.5rem;
+    font-family: $talk-font;
+    font-size: 1.9rem;
+    background-color: #2f2424;
+    color: $white;
+    border: 3px solid $white;
+    border-radius: 11px;
+    text-indent: 0.5rem;
+    transition: background-color 200ms;
+    text-align: center;
+    cursor: pointer;
+
+    &:focus {
+      background-color: $white;
+      border-color: #2f2424;
+      color: #ff7223;
+      text-indent: 0.5rem;
+    }
+  }
+
+  &__request-random {
+    margin-top: 1rem;
+    margin-left: 5rem;
+    max-width: 70%;
+    padding: 0.5rem;
+    color: $white;
+    font-family: $talk-font;
+    font-size: 1.5rem;
+    background-color: #2f2424;
+    border: 3px solid $white;
+    border-radius: 11px;
+    cursor: pointer;
+  }
+}
+
+// ----------------- HOWERS
+@media (hover: hover) and (pointer: fine) {
+  .chalk-brd__item:hover {
+    color: #ffc700;
+  }
+}
+
+@import 'responsive';

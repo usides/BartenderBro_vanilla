@@ -1,0 +1,48 @@
+@include media-big {
+}
+
+@include media-middle {
+}
+
+@include media-small {
+  .main,
+  .frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .chalk-brd {
+    min-height: 65%;
+  }
+
+  // .talk-zone {
+  //   min-height: 33%;
+  // }
+}
+
+@include media-super-small {
+  .main,
+  .frame {
+    overflow: auto;
+  }
+
+  .chalk-brd {
+    min-height: 380px;
+    &__call {
+      font-size: 1rem;
+    }
+
+    &__item {
+      font-size: 1.2rem;
+    }
+  }
+
+  .desk {
+    margin-top: -20px;
+  }
+
+  .talk-zone {
+    min-height: 50%;
+  }
+}

@@ -1,0 +1,44 @@
+$desk-font1: 'Bungee Inline', cursive;
+$desk-font2: 'Bubblegum Sans', cursive;
+$talk-font: 'Bangers', cursive;
+$info-font: 'Denk One', sans-serif;
+$yellow: #fdffa5;
+$grey: #3e3e3e;
+$orange: #ff7223;
+$darkorange: #de641f;
+$white: #fff;
+
+button,
+a,
+input,
+li,
+label {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // caret-color: transparent; // hide carret
+}
+
+@mixin media-big {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin media-middle {
+  @media screen and (max-width: 690px) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media screen and (max-width: 420px) {
+    @content;
+  }
+}
+
+@mixin media-super-small {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
