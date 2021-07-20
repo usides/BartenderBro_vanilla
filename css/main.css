@@ -66,6 +66,16 @@ main {
 
 body {
   background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .main,
@@ -203,7 +213,7 @@ body {
 
 .chalk-brd__item {
   margin-top: 0.1rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Bubblegum Sans", cursive;
   color: #fff;
   cursor: pointer;
@@ -300,6 +310,17 @@ body {
   cursor: pointer;
 }
 
+.description {
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.description a {
+  color: #fff;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .chalk-brd__item:hover {
     color: #ffc700;
@@ -313,6 +334,9 @@ body {
     height: 100%;
     border-radius: 0px;
   }
+  .description {
+    display: none;
+  }
   .chalk-brd {
     min-height: 65%;
   }
@@ -322,6 +346,7 @@ body {
   .main,
   .frame {
     overflow: auto;
+    height: 100%;
   }
   .chalk-brd {
     min-height: 380px;
@@ -330,12 +355,10 @@ body {
     font-size: 1rem;
   }
   .chalk-brd__item {
-    font-size: 1.2rem;
-  }
-  .desk {
-    margin-top: -20px;
+    font-size: 1rem;
   }
   .talk-zone {
-    min-height: 50%;
+    padding-top: 20px;
+    height: auto;
   }
 }
