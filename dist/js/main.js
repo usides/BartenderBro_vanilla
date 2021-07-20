@@ -64,10 +64,10 @@ const renderChalkBoard = function (data) {
     const newLi = document.createElement("li");
     newLi.classList.add("chalk-brd__item");
     newLi.textContent =
-      strDrink.length < 20 ? strDrink : strDrink.slice(0, 20) + "...";
+      strDrink.length <= 19 ? strDrink : strDrink.slice(0, 19) + "...";
     newLi.setAttribute("data-id", idDrink);
     if ((index == 4) & (data.length > 5))
-      newLi.innerHTML += ` ( + ${data.length - 5} )`;
+      newLi.innerHTML += `<br /> ( + ${data.length - 5} )`;
     fragment.append(newLi);
   });
   chalkBoardCall.classList.add("removed");

@@ -12,19 +12,21 @@
     border-radius: 0px;
   }
 
+  .description {
+    display: none;
+  }
+
   .chalk-brd {
     min-height: 65%;
   }
 
-  // .talk-zone {
-  //   min-height: 33%;
-  // }
 }
 
 @include media-super-small {
   .main,
   .frame {
     overflow: auto;
+    height: 100%;
   }
 
   .chalk-brd {
@@ -34,15 +36,12 @@
     }
 
     &__item {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
-  .desk {
-    margin-top: -20px;
-  }
-
   .talk-zone {
-    min-height: 50%;
+    padding-top: 20px;
+    height: auto;
   }
 }

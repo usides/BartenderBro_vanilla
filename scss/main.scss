@@ -1,4 +1,4 @@
-@import 'config';
+@import "config";
 
 ::-webkit-scrollbar {
   width: 2px;
@@ -37,6 +37,9 @@ main {
 
 body {
   background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .main,
@@ -162,7 +165,7 @@ body {
 
   &__item {
     margin-top: 0.1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: $desk-font2;
     color: $white;
     cursor: pointer;
@@ -256,6 +259,16 @@ body {
   }
 }
 
+.description {
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 1rem;
+  a {
+    color: #fff;
+  }
+}
+
 // ----------------- HOWERS
 @media (hover: hover) and (pointer: fine) {
   .chalk-brd__item:hover {
@@ -263,4 +276,4 @@ body {
   }
 }
 
-@import 'responsive';
+@import "responsive";
